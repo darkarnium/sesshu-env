@@ -1,0 +1,10 @@
+[Unit]
+Description=Sesshu Collection Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/env python <%= @script %>
+
+[Install]
+WantedBy=multi-user.target

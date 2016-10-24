@@ -1,0 +1,12 @@
+name 'sesshu-env'
+maintainer 'Peter Adkins'
+maintainer_email 'pete@kernelpicnic.net'
+description 'Installs/Configures an Sesshu node'
+long_description 'Installs/Configures an Sesshu node'
+version '0.1.0'
+
+depends 'apt', '~> 5.0.0'
+depends 'ntp', '~> 3.2.0'
+depends 'ark', '~> 2.0.0'
+depends 'sysctl', '~> 0.8.0'
+depends 'poise-python', '~> 1.5.1'

@@ -17,7 +17,14 @@ git node['sesshu']['home'] do
 end
 
 # Ensure Python 2 is installed.
-python_runtime '2'
+case node['platform']
+when 'ubuntu'
+  package 'python' do
+    action :install
+  end
+else
+  python_runtime '2'
+end
 
 # Install required Python modules.
 pip_requirements "#{node['sesshu']['home']}/requirements.txt"

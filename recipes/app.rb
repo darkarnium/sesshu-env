@@ -16,6 +16,9 @@ git node['sesshu']['home'] do
   action :sync
 end
 
+# Ensure Python 2 is installed.
+python_runtime '2'
+
 # Install required Python modules.
 pip_requirements "#{node['sesshu']['home']}/requirements.txt"
 

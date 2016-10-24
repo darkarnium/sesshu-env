@@ -26,7 +26,7 @@ Although this cookbook may be compatible with other distributions, it only conta
 * sysctl (~> 0.8.0)
 * poise-python (~> 1.5.1)
 
-## configuration
+## Configuration
 
 A configuration shim has been provided with this cookbook which will attempt to 'deep merge' a set of Chef attributes with the Sesshu distribution configuration provided by the Sesshu service. The net result of this is that any deployment specific configuration can be added to either this environment cookbook or a Chef server / override JSON document, which will take precedence over the Sesshu distribution configuration (`sesshu.dist.yaml`).
 
